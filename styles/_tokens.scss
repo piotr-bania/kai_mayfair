@@ -1,0 +1,25 @@
+// ---------- Colors ----------
+$background: #ffffff;
+$foreground: #fafafa;
+$divider: #e6e6e6;
+$primary: #6526d1;
+$secondary: #76688c;
+$heading: #1c1c1e;
+$text: #3c3c43;
+$off-white: #f8f8f8;
+$white: #ffffff;
+
+// ---------- Fluid fonts ----------
+$paragraph: clamp(1.13rem, 0.23vi + 1.07rem, 1.25rem);
+$link: clamp(1.24rem, 0.48vi + 1.12rem, 1.5rem);
+$header_6: clamp(1.36rem, 0.8vi + 1.16rem, 1.8rem);
+$header_5: clamp(1.5rem, 1.2vi + 1.2rem, 2.16rem);
+$header_4: clamp(1.65rem, 1.72vi + 1.22rem, 2.59rem);
+$header_3: clamp(1.81rem, 2.36vi + 1.22rem, 3.11rem);
+$header_2: clamp(1.99rem, 3.16vi + 1.2rem, 3.73rem);
+$header_1: clamp(2.19rem, 4.16vi + 1.15rem, 4.48rem);
+
+// ---------- Fluid space ----------
+$small: clamp(1.13rem, calc(1.04rem + 0.41vw), 1.5rem);
+$medium: clamp(1.69rem, calc(1.57rem + 0.61vw), 2.25rem);
+$large: clamp(2.25rem, calc(2.09rem + 0.81vw), 3rem);

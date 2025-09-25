@@ -1,0 +1,161 @@
+{
+	"site": {
+		"name": "Bespoke Core Starter",
+		"title": "Fine Dining Web Experiences",
+		"description": "A minimal, configurable starter for restaurant & hospitality websites.",
+		"domain": "https://example.com",
+		"language": "en-GB"
+	},
+
+	"navigation": {
+		"primary": [
+			{ "label": "Home", "href": "/" },
+			{ "label": "About", "href": "/about" },
+			{ "label": "Menus", "href": "/menus" },
+			{ "label": "Reservations", "href": "/reserve" },
+			{ "label": "Private Dining", "href": "/private-dining" },
+			{ "label": "Chef's Table", "href": "/chefs-table" },
+			{ "label": "Wine", "href": "/wine" },
+			{ "label": "Press", "href": "/press" },
+			{ "label": "Gift Cards", "href": "/gifts" },
+			{ "label": "Location", "href": "/location" },
+			{ "label": "Contact", "href": "/contact" }
+		],
+		"footer": [
+			{ "label": "Careers", "href": "/careers" },
+			{ "label": "Allergens", "href": "/allergens" },
+			{ "label": "Accessibility", "href": "/accessibility" },
+			{ "label": "Privacy", "href": "/privacy" },
+			{ "label": "Terms", "href": "/terms" }
+		],
+		"booking_cta": { "label": "Book a Table", "href": "/reserve" }
+	},
+
+	"business": {
+		"address": "1 Example Street, London W1",
+		"city": "London",
+		"postcode": "W1 1AA",
+		"country": "UK",
+		"phone": "+44 20 1234 5678",
+		"email": {
+			"general": "info@example.com",
+			"reservations": "reservations@example.com",
+			"events": "events@example.com",
+			"press": "press@example.com",
+			"careers": "careers@example.com"
+		},
+		"hours": {
+			"lunch": "Wed–Sat 12:00–14:30",
+			"dinner": "Tue–Sat 18:00–22:00",
+			"closed": "Sun–Mon"
+		}
+	},
+
+	"booking": {
+		"provider": "resy",
+		"url": "https://resy.com/",
+		"phone_backup": "+44 20 1234 5678",
+		"notes": "Credit card required to secure booking."
+	},
+
+	"social": {
+		"instagram": "https://instagram.com/example",
+		"facebook": "https://facebook.com/example",
+		"tiktok": "",
+		"x": "",
+		"google_maps": "https://maps.google.com/?q=Example",
+		"opentable": "",
+		"resy": "https://resy.com/"
+	},
+
+	"integrations": {
+		"ga_id": "",
+		"gtm_id": "",
+		"meta_pixel_id": "",
+		"hotjar_id": ""
+	},
+
+	"transitions": {
+		"overlay": { "color": "#76688c", "zIndex": 100 },
+		"enter": { "duration": 0.6, "delay": 0.0, "ease": "easeInOut" },
+		"exit": { "duration": 0.6, "delay": 0.0, "ease": "easeInOut" },
+
+		"page": { "variant": "fade", "duration": 0.45, "easing": "easeInOut" },
+		"reveal": {
+			"stagger": 0.06,
+			"distance": 24,
+			"opacity": [0, 1],
+			"duration": 0.6
+		},
+		"reduce_motion": true
+	},
+
+	"policies": {
+		"cancellation_window_hours": 48,
+		"cancellation_fee": "£50 per guest",
+		"dress_code": "Smart casual",
+		"service_charge": "12.5%",
+		"allergies_notice": "Please inform us of any allergies at least 24 hours in advance.",
+		"child_policy": "Children over 12 only.",
+		"pet_policy": "Guide dogs welcome."
+	},
+
+	"awards": [
+		{ "label": "Michelin ⭐", "year": 2024 },
+		{ "label": "World’s 50 Best Discovery", "year": 2023 }
+	],
+
+	"menus": [
+		{
+			"title": "Tasting Menu",
+			"price": "£155",
+			"url": "/menus/tasting.pdf"
+		},
+		{ "title": "Lunch Menu", "price": "£55", "url": "/menus/lunch.pdf" },
+		{ "title": "Wine List", "price": "", "url": "/menus/wine.pdf" }
+	],
+
+	"private_dining": {
+		"email": "events@example.com",
+		"phone": "+44 20 1234 5678",
+		"brochure_url": "/private/brochure.pdf",
+		"min_guests": 8,
+		"max_guests": 14,
+		"notes": "Bespoke menus available upon request."
+	},
+
+	"gifts": {
+		"provider": "giftup",
+		"url": "https://giftcards.example.com/your-restaurant"
+	},
+
+	"locations": [
+		{
+			"slug": "notting-hill",
+			"label": "Notting Hill",
+			"address": "1 Example Street",
+			"city": "London",
+			"postcode": "W11 2BQ",
+			"country": "UK",
+			"phone": "+44 20 1234 5678",
+			"booking_url": "https://resy.com/…"
+		}
+	],
+
+	"map": {
+		"embed_url": "https://www.google.com/maps/embed?pb=…",
+		"lat": 51.509,
+		"lng": -0.133
+	},
+
+	"seo": {
+		"og_image": "/og.jpg",
+		"twitter_handle": "@restaurant",
+		"robots": "index,follow"
+	},
+
+	"newsletter": {
+		"provider": "mailchimp",
+		"list_id": ""
+	}
+}

@@ -1,0 +1,118 @@
+@use 'styles/tokens' as *;
+
+/* ---------- Typography variables ---------- */
+@font-face {
+	font-family: 'Cinzel Bold';
+	src: url('../public/fonts/Cinzel-Bold.ttf');
+}
+
+@font-face {
+	font-family: 'Source Sans 3';
+	src: url('../public/fonts/SourceSans3-Regular.ttf');
+}
+
+// Font families
+$heading_font: 'Cinzel Bold', sans-serif;
+$paragraph_font: 'Source Sans 3', sans-serif;
+
+// Font weights
+$font_bold: 700;
+$font_regular: 400;
+
+html,
+body {
+	font-family: var(--font-body), ui-sans-serif, system-ui;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-heading), ui-sans-serif, system-ui;
+}
+
+/* ---------- Typography styles ---------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: $heading;
+	font-family: $heading_font;
+	font-weight: $font_bold;
+	line-height: 1.2;
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	font-size: $header_1;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: $header_2;
+}
+
+h3 {
+	font-size: $header_3;
+}
+
+h4 {
+	font-size: $header_4;
+}
+
+h5 {
+	font-size: $header_5;
+}
+
+h6 {
+	font-size: $header_6;
+}
+
+p {
+	color: $text;
+	font-family: $paragraph_font;
+	line-height: 1.3;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: $primary;
+	font-size: $paragraph;
+	font-family: $paragraph_font;
+	text-decoration: none;
+	width: max-content;
+	transition: all 0.5s ease-in-out;
+
+	&:hover {
+		color: $secondary;
+	}
+}
+
+.link {
+	color: $primary;
+	font-size: $paragraph;
+	text-decoration: underline $primary 2px;
+	width: max-content;
+	transition: all 0.5s ease-in-out;
+
+	&:hover {
+		color: $secondary;
+		text-decoration: underline $secondary 2px;
+	}
+}
+
+button {
+	font-family: $paragraph_font;
+	font-size: calc($paragraph * 0.75);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
