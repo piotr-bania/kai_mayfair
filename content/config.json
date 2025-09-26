@@ -76,7 +76,7 @@
 	},
 
 	"transitions": {
-		"overlay": { "color": "#76688c", "zIndex": 100 },
+		"overlay": { "color": "#a32024", "zIndex": 100 },
 		"enter": { "duration": 0.6, "delay": 0.0, "ease": "easeInOut" },
 		"exit": { "duration": 0.6, "delay": 0.0, "ease": "easeInOut" },
 

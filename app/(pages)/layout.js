@@ -1,5 +1,5 @@
-import './globals.css'
-import './globals.scss'
+import '@/app/globals.css'
+import '@/app/globals.scss'
 import { site } from '@/content/config'
 import { Providers } from '@/app/providers'
 import { sourceSans3Regular, cinzelBold } from '@/app/fonts'

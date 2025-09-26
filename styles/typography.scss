@@ -2,37 +2,57 @@
 
 /* ---------- Typography variables ---------- */
 @font-face {
-	font-family: 'Cinzel Bold';
-	src: url('../public/fonts/Cinzel-Bold.ttf');
+	font-family: 'Capitol';
+	src: url('/fonts/Capitol_Medium_Capitals.woff2') format('woff2'),
+		url('/fonts/Capitol_Medium_Capitals.otf') format('opentype'),
+		url('/fonts/Capitol_Medium_Capitals.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-	font-family: 'Source Sans 3';
-	src: url('../public/fonts/SourceSans3-Regular.ttf');
+	font-family: 'Cinzel';
+	src: url('../public/fonts/Cinzel-Regular.otf') format('otf'),
+		url('../public/fonts/Cinzel-Regular.ttf') format('ttf');
+	font-weight: 400;
+	font-style: normal;
 }
 
-// Font families
-$heading_font: 'Cinzel Bold', sans-serif;
-$paragraph_font: 'Source Sans 3', sans-serif;
+@font-face {
+	font-family: 'Gill Sans Light Italic';
+	src: url('../public/fonts/Gill_Sans_Light_Italic.otf') format('otf');
+	font-weight: 300;
+	font-style: italic;
+}
 
-// Font weights
-$font_bold: 700;
+@font-face {
+	font-family: 'Gill Sans Light';
+	src: url('../public/fonts/Gill_Sans_Light.otf') format('otf');
+	font-weight: 300;
+	font-style: normal;
+}
+
+/* ---------- Font family variables ---------- */
+$header_1_font: 'Capitol', serif;
+$header_2-5_font: 'Cinzel', serif;
+$paragraph_font: 'Gill Sans Light', sans-serif;
+$quote_font: 'Gill Sans Light Italic', sans-serif;
+$cta_font: 'Gill Sans Light Italic', sans-serif;
+
+/* ---------- Font weights ---------- */
+$font_medium: 500;
 $font_regular: 400;
+$font_light: 300;
 
 html,
 body {
-	font-family: var(--font-body), ui-sans-serif, system-ui;
+	background: $background;
+	font-size: $paragraph;
+	font-family: $paragraph_font;
+	font-weight: $font_light;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: var(--font-heading), ui-sans-serif, system-ui;
 }
 
 /* ---------- Typography styles ---------- */
@@ -40,19 +60,37 @@ h1,
 h2,
 h3,
 h4,
-h5,
+h5 {
+	line-height: 1.2;
+	padding: 0;
+	margin: 0;
+}
+
 h6 {
-	color: $heading;
-	font-family: $heading_font;
-	font-weight: $font_bold;
+	color: $text;
+	font-size: $header_6;
+	font-family: $quote_font;
+	font-weight: $font_light;
+	font-style: italic;
 	line-height: 1.2;
 	padding: 0;
 	margin: 0;
 }
 
 h1 {
+	color: $primary;
 	font-size: $header_1;
-	text-transform: uppercase;
+	font-family: $header_1_font;
+	font-weight: $font_medium;
+}
+
+h2,
+h3,
+h4,
+h5 {
+	color: $headings;
+	font-weight: $font_regular;
+	font-family: $header_2-5_font;
 }
 
 h2 {
@@ -73,10 +111,11 @@ h5 {
 
 h6 {
 	font-size: $header_6;
+	font-family: $paragraph_font;
 }
 
 p {
-	color: $text;
+	color: $headings;
 	font-family: $paragraph_font;
 	line-height: 1.3;
 	margin: 0;
@@ -85,14 +124,14 @@ p {
 
 a {
 	color: $primary;
-	font-size: $paragraph;
-	font-family: $paragraph_font;
+	font-size: $cta;
+	font-family: $header_2-5_font;
 	text-decoration: none;
 	width: max-content;
 	transition: all 0.5s ease-in-out;
 
 	&:hover {
-		color: $secondary;
+		color: $accent;
 	}
 }
 
@@ -104,8 +143,8 @@ a {
 	transition: all 0.5s ease-in-out;
 
 	&:hover {
-		color: $secondary;
-		text-decoration: underline $secondary 2px;
+		color: $accent;
+		text-decoration: underline $accent 2px;
 	}
 }
 

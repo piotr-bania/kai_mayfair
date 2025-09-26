@@ -1,23 +1,19 @@
 // ---------- Colors ----------
-$background: #ffffff;
-$foreground: #fafafa;
-$divider: #e6e6e6;
-$primary: #6526d1;
-$secondary: #76688c;
-$heading: #1c1c1e;
-$text: #3c3c43;
-$off-white: #f8f8f8;
-$white: #ffffff;
+$primary: #b1880b;
+$accent: #a32024;
+$background: #120812;
+$text: #b3aaa2;
+$headings: #eae6e1;
 
 // ---------- Fluid fonts ----------
-$paragraph: clamp(1.13rem, 0.23vi + 1.07rem, 1.25rem);
-$link: clamp(1.24rem, 0.48vi + 1.12rem, 1.5rem);
-$header_6: clamp(1.36rem, 0.8vi + 1.16rem, 1.8rem);
-$header_5: clamp(1.5rem, 1.2vi + 1.2rem, 2.16rem);
-$header_4: clamp(1.65rem, 1.72vi + 1.22rem, 2.59rem);
-$header_3: clamp(1.81rem, 2.36vi + 1.22rem, 3.11rem);
-$header_2: clamp(1.99rem, 3.16vi + 1.2rem, 3.73rem);
-$header_1: clamp(2.19rem, 4.16vi + 1.15rem, 4.48rem);
+$paragraph: clamp(1rem, 0.26vi + 0.93rem, 1.25rem);
+$cta: clamp(1.2rem, 0.45vi + 1.09rem, 1.63rem);
+$header_6: clamp(1.44rem, 0.71vi + 1.26rem, 2.11rem);
+$header_5: clamp(1.73rem, 1.07vi + 1.46rem, 2.75rem);
+$header_4: clamp(2.07rem, 1.58vi + 1.68rem, 3.57rem);
+$header_3: clamp(2.49rem, 2.27vi + 1.92rem, 4.64rem);
+$header_2: clamp(2.99rem, 3.21vi + 2.18rem, 6.03rem);
+$header_1: clamp(3.58rem, 4.48vi + 2.46rem, 7.84rem);
 
 // ---------- Fluid space ----------
 $small: clamp(1.13rem, calc(1.04rem + 0.41vw), 1.5rem);
